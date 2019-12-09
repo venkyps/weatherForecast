@@ -92,7 +92,7 @@ public class WeatherController {
      */
     @PostConstruct
     private void loadCountryDetails(){
-        countryDetailList = countryDetailRepository.findAll();
+            countryDetailList = countryDetailRepository.findAll();
         countryDetailList.stream().forEach(countryDetail -> logger.debug("List of cities for weather data "+countryDetail.getCityName()));
     }
 
